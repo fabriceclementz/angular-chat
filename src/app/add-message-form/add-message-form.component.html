@@ -1,0 +1,4 @@
+<form novalidate (ngSubmit)="onSubmit(newMessage)" [formGroup]="newMessage">
+  <input type="text" placeholder="Type your message..." formControlName="text">
+  <p>{{ newMessage.controls.text?.errors | json }}</p>
+</form>
